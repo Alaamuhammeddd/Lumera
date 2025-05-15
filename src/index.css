@@ -14,12 +14,34 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: theme(
-    "colors.zinnwalditeBrown"
-  ); /* Replace with Tailwind's timberWolf if needed */
+  background-color: theme("colors.zinnwalditeBrown");
   transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+/* Inactive bullets: circle with brown border, light gray fill */
+.swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+  background-color: theme("colors.timberWolf") !important; /* light gray fill */
+  border: 3px solid theme("colors.zinnwalditeBrown") !important; /* brown border */
+  border-radius: 50% !important; /* circle */
+  opacity: 1 !important;
+  margin: 0 6px !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Active bullet: stretched rounded rectangle */
+.swiper-pagination-bullet-active {
+  width: 28px !important; /* wider for stretched effect */
+  height: 14px !important;
+  background-color: theme(
+    "colors.timberWolf"
+  ) !important; /* same light gray fill */
+  border: 3px solid theme("colors.zinnwalditeBrown") !important; /* brown border */
+  border-radius: 10px !important; /* rounded rectangle */
+  transform: scale(1) !important; /* keep scale normal */
 }

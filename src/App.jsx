@@ -1,10 +1,15 @@
 import React from "react";
 import Header from "./Shared/Header/Header";
+import Home from "./Landing/home";
+import "./index.css";
+import About from "./About/About";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-darkGray">
       <Header />
+      <Home />
+      <About />
     </div>
   );
 };

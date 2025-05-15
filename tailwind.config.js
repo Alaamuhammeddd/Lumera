@@ -9,6 +9,9 @@ export default {
         rocketMetallic: "#8B7C70",
         darkGray: "#B1A7A0",
       },
+      fontFamily: {
+        justAnotherHand: ["Just Another Hand", "cursive"],
+      },
     },
   },
   plugins: [],

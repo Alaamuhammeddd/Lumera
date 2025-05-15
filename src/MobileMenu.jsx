@@ -1,6 +1,5 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
 const MobileMenu = ({ open }) => {
   return (
     <AnimatePresence mode="wait">

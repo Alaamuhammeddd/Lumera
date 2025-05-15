@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { data } from "../../StaticData/NavbarMenu";
+import { Link as ScrollLink } from "react-scroll";
+// import { Link } from "react-router-dom";
 import lumera from "../../assets/Images/photo_2025-05-10_21-16-28-removebg-preview.png";
 import { GoPerson } from "react-icons/go";
 import { PiBasket } from "react-icons/pi";
 import { LuHeart } from "react-icons/lu";
 import { IoMenu } from "react-icons/io5";
 import MobileMenu from "../../MobileMenu";
+import Home from "../../Landing/home";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -20,18 +22,26 @@ const Header = () => {
           {/* Menu */}
           <div className="hidden md:block">
             <ul className="flex items-center gap-16 text-zinnwalditeBrown capitalize font-semibold">
-              {data.map((item) => {
-                return (
-                  <li key={item.id}>
-                    <a
-                      href={item.link}
-                      className="nav-link py-3 px-4 text-zinnwalditeBrown hover:text-timberWolf font-semibold"
-                    >
-                      {item.title}
-                    </a>
-                  </li>
-                );
-              })}
+              <li className="nav-link py-3 px-4 text-zinnwalditeBrown hover:cursor-pointer hover:text-timberWolf font-semibold">
+                <ScrollLink to="home" smooth={true} duration={500}>
+                  Home
+                </ScrollLink>
+              </li>
+              <li className="nav-link py-3 px-4 text-zinnwalditeBrown hover:cursor-pointer hover:text-timberWolf font-semibold">
+                <ScrollLink to="about" smooth={true} duration={500}>
+                  About
+                </ScrollLink>
+              </li>
+              <li className="nav-link py-3 px-4 text-zinnwalditeBrown hover:cursor-pointer hover:text-timberWolf font-semibold">
+                <ScrollLink to="home" smooth={true} duration={500}>
+                  Our Products
+                </ScrollLink>
+              </li>
+              <li className="nav-link py-3 px-4 text-zinnwalditeBrown hover:cursor-pointer hover:text-timberWolf font-semibold">
+                <ScrollLink to="home" smooth={true} duration={500}>
+                  Best Seller
+                </ScrollLink>
+              </li>
             </ul>
           </div>
           {/* Buttons */}
