@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Shared/Header/Header";
-import Home from "./Landing/home";
+import Home from "./Landing/Home";
 import "./index.css";
 import About from "./About/About";
 

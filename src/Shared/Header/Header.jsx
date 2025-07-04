@@ -7,7 +7,7 @@ import { PiBasket } from "react-icons/pi";
 import { LuHeart } from "react-icons/lu";
 import { IoMenu } from "react-icons/io5";
 import MobileMenu from "../../MobileMenu";
-import Home from "../../Landing/home";
+import Home from "../../Landing/Home";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
