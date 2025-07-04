@@ -5,26 +5,26 @@ import noSideEffect from "./Images/NoSideEffect.png";
 
 const About = () => {
   return (
-    <div id="about" className="container">
+    <div id="about" className="container mx-auto px-4">
       <h2 className="flex justify-center font-justAnotherHand text-7xl py-10 text-zinnwalditeBrown">
         Why Lumera?
       </h2>
-      <div className="flex justify-around">
-        <figure>
-          <img src={natural} alt="natural" />
-          <figcaption className="flex justify-center text-2xl py-4 font-semibold text-zinnwalditeBrown">
+      <div className="flex flex-col md:flex-row items-center justify-around gap-10">
+        <figure className="text-center">
+          <img src={natural} alt="natural" className="mx-auto" />
+          <figcaption className="text-2xl py-4 font-semibold text-zinnwalditeBrown">
             Natural
           </figcaption>
         </figure>
-        <figure>
-          <img src={noSideEffect} alt="No Side Effects" />
-          <figcaption className="flex justify-center text-2xl py-4 font-semibold text-zinnwalditeBrown">
+        <figure className="text-center">
+          <img src={noSideEffect} alt="No Side Effects" className="mx-auto" />
+          <figcaption className="text-2xl py-4 font-semibold text-zinnwalditeBrown">
             No Side Effects
           </figcaption>
         </figure>
-        <figure>
-          <img src={organic} alt="organic" />
-          <figcaption className="flex justify-center text-2xl py-4 font-semibold text-zinnwalditeBrown">
+        <figure className="text-center">
+          <img src={organic} alt="organic" className="mx-auto" />
+          <figcaption className="text-2xl py-4 font-semibold text-zinnwalditeBrown">
             Organic
           </figcaption>
         </figure>
